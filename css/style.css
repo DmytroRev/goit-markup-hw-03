@@ -31,6 +31,10 @@ color: #434455;
 background-color: #FFFFFF;
 }
 
+.header-desing {
+    border-bottom: 1px solid #e7e9fc;
+}
+
 .logo {
 color: #4d5ae5;
 font-size: 18px;
@@ -42,6 +46,7 @@ text-transform: uppercase;
 display: block;
 padding-top: 24px;
 padding-bottom: 24px;
+margin-right: 76px;
 }
 
 .logotype {
@@ -60,15 +65,13 @@ padding-bottom: 24px;
 }
 
 .container-nav {
-    width: 1188px;
+    width: 1158px;
     margin-left: auto;
     margin-right: auto;
     padding-left: 15px;
     padding-right: 15px;
     display: flex;
     justify-content: space-between;
-/*     padding-top: 24px;
-    padding-bottom: 24px; */
 }
 
 .contacts {
@@ -85,12 +88,18 @@ padding-bottom: 24px;
 
 .page-navigation {
     display: flex;
-    column-gap: 40px;
+    gap: 40px;
+    align-items: center;
+    margin-right: 40px;
+}
+
+.nav-list {
+    margin-right: 0;
 }
 
 .page-navigation-contact {
     display: flex;
-    column-gap: 40px;
+    gap: 40px;
 }
 
 .container {
@@ -103,7 +112,7 @@ padding-bottom: 24px;
 
 .main {
 background-color: #2E2F42;
-padding: 188px 472px 292px 472px;
+padding: 188px 0 188px;
 
 }
 
@@ -114,6 +123,7 @@ font-weight: 700;
 line-height: 1.07;
 letter-spacing: 0.02em;
 text-align: center;
+max-width: 496px;
 }
 
 .main-button-list {
@@ -122,13 +132,18 @@ font-size: 16px;
 font-weight: 500;
 line-height: 1.5;
 letter-spacing: 0.04em;
-background-color: #4D5AE5;
+display: block;
+min-width: 169px;
+height: 56px;
+border: none;
+background-color: #4d5ae5;
+border-radius: 4px;
 }
 
-.container-button {
+/* .container-button {
     text-align: center;
     padding-top: 48px;
-}
+} */
 
 .visually-hidden {
     position: absolute;
@@ -150,6 +165,7 @@ font-size: 20px;
 font-weight: 500;
 line-height: 1.2;
 letter-spacing: 0.02em;
+margin-bottom: 8px; 
 }
 
 .benefits-list-item {
@@ -166,11 +182,13 @@ letter-spacing: 0.02em;
 .container-benefits-list {
     justify-content: center;
     display: flex;
-    column-gap: 24px;
+    gap: 24px;
+    width: calc((100% - 72px) / 4);
 }
 
 .container-benefits-item {
-width: 264px;
+/* width: 264px; */
+/* width: calc((100% - 72px) / 4); */
 }
 
 .team {
@@ -190,12 +208,12 @@ text-transform: capitalize;
 line-height: 1.11;
 letter-spacing: 0.02em;
 text-align: center;
+margin-bottom: 72px;
 }
 
 .conteiner-list-item {
     display: flex;
-    padding-top: 72px;
-    column-gap: 24px;
+    gap: 24px;
     justify-content: center;
     text-align: center;
 }
@@ -204,7 +222,8 @@ text-align: center;
 background-color: #FFFFFF;
 font-weight: 400;
 padding-bottom: 32px;
-border-radius: 4px;
+border-radius: 0px 0px 4px 4px;
+width: calc((100% - 72px) / 4);
 }
 
 .name-list {
@@ -214,12 +233,19 @@ font-weight: 500;
 line-height: 1.2;
 letter-spacing: 0.02em;
 padding-top: 32px;
+text-align: center;
+margin-bottom: 8px
 }
 
 .name-list-item {
 font-size: 16px;
 line-height: 1.5;
 letter-spacing: 0.02em;
+text-align: center;
+}
+
+.container-name {
+    padding: 32px 0;
 }
 
 .portfolio {
@@ -230,39 +256,43 @@ text-transform: capitalize;
 line-height: 1.11;
 letter-spacing: 0.02em;
 text-align: center;
-padding-bottom: 72px;
+margin-bottom: 72px;
 }
 
 .container-portfolio {
     display: flex;
     flex-wrap: wrap;
     column-gap: 24px;
+    row-gap: 48px;
     justify-content: center;
 }
 
 .container-portfolio-list {
+    width: calc((100% - 48px) / 3);
     margin-bottom: 24px;
 
 }
 
 .container-portfolio-list-item {
-    margin-top: 24px;
+    /* margin-top: 24px; */
 
 }
 
 .container-text {
-    border: 1px #E7E9FC solid;
-    padding-left: 16px;
-    padding-right: 16px;
+    border: 1px solid #e7e9fc;
+    /* padding-left: 16px;
+    padding-right: 16px; */
+    padding: 32px 16px;
+    border-top: none;
 }
 
-.container-text-list{
+/* .container-text-list{
 border-right: 1px #E7E9FC solid;
 border-bottom: 1px #E7E9FC solid; 
 border-left: 1px #E7E9FC solid;
 padding-left: 16px;
 padding-right: 16px;
-}
+} */
 
 .portfolio-list {
 color: #2E2F42;
@@ -270,7 +300,8 @@ font-size: 20px;
 font-weight: 500;
 line-height: 1.2;
 letter-spacing: 0.02em;
-padding-top: 32px;
+/* padding-top: 32px; */
+margin-bottom: 8px;
 }
 
 .portfolio-list-item {
@@ -284,6 +315,7 @@ padding-bottom: 32px;
 
 .footer {
 background-color: #2E2F42;
+padding: 100px 0 100px;
 }
 
 .logo-footer {
@@ -294,7 +326,8 @@ font-weight: 700;
 line-height: 1.17;
 letter-spacing: 0.03em;
 text-transform: uppercase;
-padding-bottom: 18px;
+display: inline-block;
+margin-bottom: 16px;
 }
 
 .logotype-footer {
