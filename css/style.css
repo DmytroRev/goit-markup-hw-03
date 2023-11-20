@@ -46,13 +46,11 @@ text-transform: uppercase;
 display: block;
 padding-top: 24px;
 padding-bottom: 24px;
-/* margin-right: 76px; */
-/* padding-right: 76px; */
+margin-right: 76px;
 }
 
 .logotype {
 color: #2e2f42;
-margin-right: 76px;
 }
 
 .nav {
@@ -315,7 +313,7 @@ letter-spacing: 0.02em;
 
 .footer {
 background-color: #2E2F42;
-/* padding: 100px 0 100px; */
+padding: 100px 0;
 }
 
 .logo-footer {
@@ -351,7 +349,7 @@ max-width: 264px;
 }
 
 .container-footer {
-    padding: 140px 1020px 100px 156px;
+    /* padding: 140px 1020px 100px 156px; */
 }
 
 
